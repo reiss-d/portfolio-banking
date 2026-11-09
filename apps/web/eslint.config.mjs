@@ -1,17 +1,31 @@
+// @ts-check
+
 import { defineConfig, globalIgnores } from 'eslint/config'
 import nextVitals from 'eslint-config-next/core-web-vitals'
-import nextTs from 'eslint-config-next/typescript'
+import tseslint from 'typescript-eslint'
+import js from '@eslint/js'
 
 const eslintConfig = defineConfig([
    ...nextVitals,
-   ...nextTs,
-   // Override default ignores of eslint-config-next.
+   {
+      files: ['**/*.{js,ts,jsx,tsx}'],
+      extends: [
+         js.configs.recommended,
+         tseslint.configs.strictTypeChecked,
+         tseslint.configs.stylisticTypeChecked,
+      ],
+      languageOptions: {
+         parserOptions: {
+            projectService: true,
+         },
+      },
+   },
    globalIgnores([
-      // Default ignores of eslint-config-next:
       '.next/**',
       'out/**',
       'build/**',
       'next-env.d.ts',
+      'target',
    ]),
 ])
 
