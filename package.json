@@ -1,0 +1,28 @@
+{
+   "name": "banking-fraud-detection",
+   "version": "0.0.0",
+   "type": "module",
+   "scripts": {
+      "web:lint": "cd apps/web && pnpm lint"
+   },
+   "devDependencies": {
+      "@eslint/js": "catalog:",
+      "@types/node": "catalog:",
+      "eslint": "^10.14.0",
+      "typescript": "catalog:",
+      "typescript-eslint": "catalog:"
+   },
+   "packageManager": "pnpm@12.18.0",
+   "devEngines": {
+      "packageManager": {
+         "name": "pnpm",
+         "version": "^12.18.0",
+         "onFail": "download"
+      },
+      "runtime": {
+         "name": "node",
+         "version": "^26.13.0",
+         "onFail": "download"
+      }
+   }
+}

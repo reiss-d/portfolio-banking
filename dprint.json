@@ -1,0 +1,40 @@
+{
+   "lineWidth": 80,
+   "typescript": {
+      "indentWidth": 3,
+      "trailingCommas": "onlyMultiLine",
+      "arguments.trailingCommas": "never",
+      "parameters.trailingCommas": "never",
+      "quoteStyle": "preferSingle",
+      "useBraces": "always",
+      "conditionalType.preferSingleLine": false,
+      "conditionalType.operatorPosition": "maintain",
+      "binaryExpression.operatorPosition": "sameLine",
+      "module.sortImportDeclarations": "maintain",
+      "arrowFunction.useParentheses": "force",
+      "importDeclaration.sortNamedImports": "caseSensitive",
+      "semicolons": "asi"
+   },
+   "json": {
+      "indentWidth": 3,
+      "associations": ["**/*.json"]
+   },
+   "markdown": {},
+   "toml": {},
+   "includes": ["**/*.{ts,tsx,js,jsx,cjs,mjs,json,md,toml}"],
+   "excludes": [
+      "**/node_modules",
+      "**/*-lock.json",
+      "**/.next",
+      "**/dist",
+      "**/.turbo",
+      "**/.swc",
+      "target"
+   ],
+   "plugins": [
+      "npm:@dprint/typescript@0.99.1",
+      "npm:@dprint/json@0.26.0",
+      "npm:@dprint/markdown@0.29.0",
+      "npm:@dprint/toml@0.10.0"
+   ]
+}

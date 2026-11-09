@@ -1,0 +1,37 @@
+{
+   "editor.defaultFormatter": "dprint.dprint",
+   "editor.formatOnPaste": true,
+   "editor.formatOnSave": true,
+   "[dotenv]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+   },
+   "[json]": {
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "[markdown]": {
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "[toml]": {
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "[typescript]": {
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "[typescriptreact]": {
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "[javascript]": {
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "[javascriptreact]": {
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "js/ts.tsdk.path": "node_modules/typescript/lib",
+   "rust-analyzer.check.command": "clippy"
+   // "rust-analyzer.cargo.features": [
+   //    "some_feature"
+   // ], // uncomment if needed
+   // "rust-analyzer.check.features": [
+   //    "some_feature"
+   // ], // uncomment if needed
+}

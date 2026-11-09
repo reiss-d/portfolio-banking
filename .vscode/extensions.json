@@ -1,0 +1,6 @@
+{
+   "recommendations": [
+      "dprint.dprint",
+      "rust-lang.rust-analyzer"
+   ]
+}

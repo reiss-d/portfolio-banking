@@ -1,0 +1,34 @@
+{
+   "$schema": "https://json.schemastore.org/tsconfig",
+   "compilerOptions": {
+      "target": "esnext",
+      "lib": ["ES2024"],
+      "types": ["node"],
+      "module": "nodenext",
+      "moduleResolution": "nodenext",
+      "moduleDetection": "force",
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+      "allowImportingTsExtensions": true,
+      "allowJs": true,
+
+      "noEmit": true,
+      "declaration": false,
+      "declarationMap": false,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "skipDefaultLibCheck": true,
+      "incremental": true,
+
+      "strict": true,
+      "strictNullChecks": true,
+      "noUnusedLocals": false, // handled by linter
+      "noUnusedParameters": false, // handled by linter
+      "noImplicitOverride": true,
+      "noImplicitAny": true,
+      "noUncheckedIndexedAccess": true,
+      "noFallthroughCasesInSwitch": true,
+      "noErrorTruncation": true
+   },
+}

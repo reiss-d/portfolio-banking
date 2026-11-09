@@ -1,0 +1,16 @@
+[workspace]
+resolver = "3"
+members = [
+  "apps/backend",
+]
+
+[workspace.lints.clippy]
+all = { level = "deny", priority = -1 }
+style = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+
+needless_return = "allow"
+similar_names = "allow"
+wildcard_imports = "allow"
+unwrap_used = "deny"
