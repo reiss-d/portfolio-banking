@@ -4,6 +4,9 @@ members = [
   "apps/backend",
 ]
 
+[workspace.package]
+edition = "2024"
+
 [workspace.lints.clippy]
 all = { level = "deny", priority = -1 }
 style = { level = "warn", priority = -1 }
