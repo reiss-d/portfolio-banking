@@ -3,7 +3,10 @@
    "version": "0.0.0",
    "type": "module",
    "scripts": {
-      "web:lint": "cd apps/web && pnpm lint"
+      "backend:dev": "cargo run -p backend",
+      "backend:lint": "cargo clippy -p backend",
+      "web:dev": "pnpm --filter web dev",
+      "web:lint": "pnpm --filter web lint"
    },
    "devDependencies": {
       "@eslint/js": "catalog:",
